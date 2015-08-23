@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Snap And Match</string>
+    <string name="title_activity_plagiste">Snap And Match - Détecteur de plagiat</string>
+    <string name="navigation_drawer_open">Ouvrir le menu</string>
+    <string name="navigation_drawer_close">Fermer le menu</string>
+    <string name="result_title">Résultats</string>
+    <string name="noresult">Aucune correspondance trouvée !</string>
+    <string name="error_title">Oups</string>
+    <string name="error">Une erreur est survenue...</string>
+    <string name="snack_nointernet">Internet ne semble pas actif</string>
+    <string name="snack_enableinternet">Activer</string>
+    <string name="help_title">Aide</string>
+    <string name="help_step_1">Étape 1 :\nTronquez 2 ou 3 lignes, puis prenez la photo !\nVérifiez que le texte est lisible, et orienté en portrait.</string>
+    <string name="help_step_2">Étape 2 :\nAttendez pendant que l\'application lit la photo, vérifie l\'orthographe et cherche des correspondances.\nCela peut prendre du temps. Plus il y a de mots, plus la recherche est lente.</string>
+    <string name="help_step_3">Étape 3 :\nC\'est tout ! Vous n\'avez qu\'à lire les résultats.</string>
+    <string name="version">Version %1$s</string>
+</resources>

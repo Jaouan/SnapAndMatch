@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Snap And Match</string>
+    <string name="title_activity_plagiste">Snap And Match - Plagiarism Detector</string>
+    <string name="navigation_drawer_open">Open drawer</string>
+    <string name="navigation_drawer_close">Close drawer</string>
+    <string name="result_title">Matches</string>
+    <string name="noresult">No match !</string>
+    <string name="error_title">Oops</string>
+    <string name="error">An error occured...</string>
+    <string name="snack_nointernet">Data disabled</string>
+    <string name="snack_enableinternet">Enable</string>
+    <string name="help_title">Help</string>
+    <string name="help_step_1">Step 1 :\nCrop 2 or 3 lines, then snap !\nBe sure the text is clearly readable, and oriented in portrait.</string>
+    <string name="help_step_2">Step 2 :\nWait during the application is reading the picture, checking words spelling and searching for matches.\nIt may take a while. The more words , more research will be slow.</string>
+    <string name="help_step_3">Step 3 :\nIt\'s done ! Just check matches.</string>
+    <string name="version">Version %1$s</string>
+</resources>

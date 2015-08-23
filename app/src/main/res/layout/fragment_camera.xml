@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:keepScreenOn="true"
+    android:layout_height="match_parent"
+    tools:context="com.jaouan.snapandmatch.SnapAndMatchActivity$PlaceholderFragment">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:id="@+id/webView"></WebView>
+
+    <com.jaouan.snapandmatch.components.views.FakeScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextureView
+                android:id="@+id/surface"
+                android:layout_width="match_parent"
+                android:layout_height="1080px" />
+
+            <com.edmodo.cropper.CropImageView
+                android:id="@+id/cropImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+    </com.jaouan.snapandmatch.components.views.FakeScrollView>
+
+    <FrameLayout
+        android:id="@+id/flashView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="gone"></FrameLayout>
+
+    <ImageView
+        android:id="@+id/croppedImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"/>
+
+    <com.github.jorgecastilloprz.FABProgressCircle
+        android:id="@+id/snapCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        app:arcWidth="4dp"
+        app:arcColor="#7CB342">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/snapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="35dp"
+            android:src="@drawable/snap"
+            app:backgroundTint="#FBC02D"
+            app:borderWidth="0dp"
+            app:elevation="4dp"
+            app:rippleColor="#FFF176" />
+
+    </com.github.jorgecastilloprz.FABProgressCircle>
+
+</RelativeLayout>

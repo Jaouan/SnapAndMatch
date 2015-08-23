@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'me.tatarka:gradle-retrolambda:2.5.0'
+    }
+}
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.jaouan.snapandmatch"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven { url "https://jitpack.io" }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'net.bozho.easycamera:easycamera:0.0.1:aar@aar'
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.github.jorgecastilloprz:fabprogresscircle:1.01@aar'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'org.apache.commons:commons-lang3:3.1'
+    compile 'com.github.jaouan:kerandroid:1.0.7'
+    compile 'com.github.jaouan:tess-bin:5.1.0-bin'
+    compile 'com.github.jaouan:cropper:2.0.1'
+}
